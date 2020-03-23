@@ -8,6 +8,17 @@ class Header extends Component{
         return(
             <React.Fragment>
                  <saction>
+                 {!localStorage.getItem('isAuth') ?
+                 
+                 <table>
+                     <th>Login</th>
+                        {/*<th><Link to="/">Login</Link></th>
+                        <th><Link to="/manageusers">ManageUsers</Link></th>
+                        <th><Link to="/setting"> Setting</Link></th>
+                        <th><Logout/></th> */}
+                    </table>
+                 : 
+                 null}
                  {localStorage.getItem('isAuth')== 'admin' ?
                  
                  <table>

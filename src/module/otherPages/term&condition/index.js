@@ -1,0 +1,1 @@
+export * from './componets/term&condition.jsx'
